@@ -1,0 +1,102 @@
+body {
+  background-color: #2e2e2e;
+  color:orange;
+  margin:0;
+  font-family: 'Courgette', cursive;
+}
+.navbar {
+  background-color: indigo!important;
+}
+#meny {
+  background-color: indigo;
+}
+#top {
+  background-color: darkblue;
+  background-image: url(../img/DarkcitySmall.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  opacity: 0.8;
+
+}
+#sidebar {
+  background-color: orange;
+}
+#content {
+  background-color: #2e2e2e;
+}
+#right {
+  background-color: orange;
+  display: none;
+}
+#bottomtext {
+  background-color:indigo;
+}
+#meny, #top, #sidebar, #content, #right, #bottomtext {
+  padding: 20px;
+  box-sizing: border-box;
+}
+#bottomtext p {
+  text-align: center;
+  font-size: 200%;
+}
+img {
+  max-width: 100%;
+  width: auto;
+}
+h1+p, h1+p+p+p, h1+p+p+p+p+p, h1+p+p+p+p+p+p+p {
+  color: red;
+}
+.spantext {
+  font-size: 150%;
+  font-weight: bold;
+  color:green;
+}
+
+/*******************************************************************************
+                           Tablets - 769px
+*******************************************************************************/
+@media screen and (min-width:769px) {
+  #top {
+    background-image: url(../img/DarkcityMedium.jpg);
+  }
+  #content {
+    width: 70%;
+    float: right;
+  }
+  #sidebar {
+    display:flex;
+    width: 30%;
+    float: left;
+    align-items: center;
+  }
+  #bottomtext {
+    clear:both;
+  }
+  main {
+    display:flex;
+  }
+}/* 769px */
+/*******************************************************************************
+                               Desktop - 1025px
+*******************************************************************************/
+@media screen and (min-width:1025px) {
+  #top {
+    background-image: url(../img/DarkcityBig.jpg);
+  }
+  #right {
+    display:flex;
+    width: 25%;
+    align-items: center;
+  }
+  #content {
+    width:50%;
+  }
+  #sidebar {
+    width:25%;
+  }
+  main {
+    max-width:1200px;
+    margin: auto;
+  }
+} /* 1025px */
